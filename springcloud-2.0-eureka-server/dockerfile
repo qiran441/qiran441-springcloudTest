@@ -11,7 +11,7 @@ VOLUME /tmp
 
 EXPOSE 8100
 # 将jar包添加到容器中并更名为app.jar
-COPY /root/workspace/springCloudTest/springcloud-2.0-eureka-server/target/springcloud-2.0-eureka-server.jar springcloud-2.0-eureka-server.jar 
+ADD /root/workspace/springCloudTest/springcloud-2.0-eureka-server/target/springcloud-2.0-eureka-server.jar springcloud-2.0-eureka-server.jar 
 # 运行jar包
-RUN bash -c 'touch /app.jar'
+RUN bash -c 'touch /springcloud-2.0-eureka-server.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/springcloud-2.0-eureka-server.jar"]
