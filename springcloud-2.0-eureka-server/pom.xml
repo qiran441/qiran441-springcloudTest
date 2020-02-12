@@ -41,7 +41,8 @@
 	</repositories>
 
 <build>
-<defaultGoal>compile</defaultGoal>  
+	<defaultGoal>compile</defaultGoal>  
+	<finalName>springcloud-2.0-eureka-server</finalName>
     <plugins>
         <plugin>
             <groupId>org.springframework.boot</groupId>
