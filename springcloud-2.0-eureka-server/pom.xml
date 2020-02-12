@@ -39,8 +39,7 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
-<build>
+	<build>
 	<defaultGoal>compile</defaultGoal>  
 	<finalName>springcloud-2.0-eureka-server</finalName>
     <plugins>

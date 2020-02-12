@@ -51,6 +51,7 @@
 
 <build>
 <defaultGoal>compile</defaultGoal>  
+	<finalName>springcloud-2.0-member</finalName>
     <plugins>
         <plugin>
             <groupId>org.springframework.boot</groupId>

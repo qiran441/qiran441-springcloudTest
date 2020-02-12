@@ -50,6 +50,7 @@
 
 <build>
 <defaultGoal>compile</defaultGoal>  
+	<finalName>springcloud-2.0-order</finalName>
     <plugins>
         <plugin>
             <groupId>org.springframework.boot</groupId>
