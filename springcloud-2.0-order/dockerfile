@@ -11,7 +11,7 @@ VOLUME /tmp
 
 EXPOSE 8001
 # 将jar包添加到容器中并更名为app.jar
-ADD /root/workspace/springCloudTest/springcloud-2.0-order/target/springcloud-2.0-order.jar springcloud-2.0-order.jar 
+ADD target/springcloud-2.0-order.jar springcloud-2.0-order.jar 
 # 运行jar包
 RUN bash -c 'touch /springcloud-2.0-order.jar'
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/springcloud-2.0-order.jar"]
+ENTRYPOINT ["java","-jar","/springcloud-2.0-order.jar"]
