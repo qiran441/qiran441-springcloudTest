@@ -39,7 +39,7 @@ public class OrderControler {
 	@RequestMapping("/getOrder")
 	public String getOrder() {
 		// 有两种方式，一种是采用服务别名方式调用，另一种是直接调用 使用别名去注册中心上获取对应的服务调用地址
-		String url = "http://app-itmayiedu-member/getMember";
+		String url = "http://192.168.229.132:8000/getMember";
 		String result = restTemplate.getForObject(url, String.class);
 		System.out.println("订单服务调用会员服务result:" + result);
 		return result;
