@@ -57,7 +57,7 @@
             <artifactId>spring-boot-maven-plugin</artifactId>
             <configuration>
                 <!-- 工程主入口-->
-                <mainClass>com.itmayiedu.api.controller.AppOrder</mainClass>
+                <mainClass>com.itmayeidu.api.controller.AppOrder</mainClass>
             </configuration>
             <executions>
                 <execution>

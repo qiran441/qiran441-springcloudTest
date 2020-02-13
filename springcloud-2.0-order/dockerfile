@@ -14,4 +14,4 @@ EXPOSE 8001
 ADD target/springcloud-2.0-order.jar springcloud-2.0-order.jar 
 # 运行jar包
 RUN bash -c 'touch /springcloud-2.0-order.jar'
-ENTRYPOINT ["java","-jar","/springcloud-2.0-order.jar"]
+ENTRYPOINT ["java","-jar","/springcloud-2.0-order.jar","&"]

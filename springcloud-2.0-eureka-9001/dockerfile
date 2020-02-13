@@ -14,4 +14,4 @@ EXPOSE 9001
 ADD target/springcloud-2.0-eureka-9001.jar springcloud-2.0-eureka-9001.jar 
 # 运行jar包
 RUN bash -c 'touch /springcloud-2.0-eureka-9001.jar'
-ENTRYPOINT ["java","-jar","/springcloud-2.0-eureka-9001.jar"]
+ENTRYPOINT ["java","-jar","/springcloud-2.0-eureka-9001.jar","&"]

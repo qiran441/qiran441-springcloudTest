@@ -14,4 +14,4 @@ EXPOSE 8100
 ADD target/springcloud-2.0-eureka-server.jar springcloud-2.0-eureka-server.jar 
 # 运行jar包
 RUN bash -c 'touch /springcloud-2.0-eureka-server.jar'
-ENTRYPOINT ["java","-jar","/springcloud-2.0-eureka-server.jar"]
+ENTRYPOINT ["java","-jar","/springcloud-2.0-eureka-server.jar","&"]
