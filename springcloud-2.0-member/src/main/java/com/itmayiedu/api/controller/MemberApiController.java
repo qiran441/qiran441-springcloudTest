@@ -27,7 +27,7 @@ public class MemberApiController {
 	//http://pc-20160704rgnh:8000/getMember 通过微服务名称访问
 	@RequestMapping("/getMember")
 	public String getMember() {
-		return "this is member，我是会员服务,springcloud3333.0版本,学习分布式和微服务请上蚂蚁课堂!端口号:" + serverPort;
+		return "this is member，我是会员服务,springcloud555555.0版本,学习分布式和微服务请上蚂蚁课堂!端口号:" + serverPort;
 	}
 
 }
